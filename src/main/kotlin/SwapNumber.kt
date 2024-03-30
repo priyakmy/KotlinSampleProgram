@@ -1,18 +1,41 @@
+
+//Without Using Third Variable
+
 fun main(){
 
-    print("Enter your First Number:")
-    val i:Int = readLine()!!.toInt()
+    var first = 12.0f
+    var second = 24.5f
 
-   /* print("Enter your Second Number:")
-    val j:Int = readLine()!!.toInt()
+    println("--Before swap--")
+    println("First number = $first")
+    println("Second number = $second")
 
-    val temp:Int = readLine()!!.toInt()
+    first = first - second
+    second = first + second
+    first = second - first
 
-   temp = i
-    i=j
-    j= temp */
+    println("--After swap--")
+    println("First number = $first")
+    println("Second number = $second")
 
-    println("Swap Number is  Number1 $i ")
+
+
+    // Using Third Variable
+
+    println("Enter your First number:")
+    var p= readLine()!!.toInt()
+    println("Enter your Second number:")
+    var q= readLine()!!.toInt()
+
+    val temp = p
+         p= q
+         q= temp
+
+    println("Swaped number is: $p, $q")
+
+
+
+
 
 
 }
