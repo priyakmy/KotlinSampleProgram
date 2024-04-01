@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     println( fruits.get(0))
     println( fruits.get(3))
 
-    // Set the value at 3rd index
+    // Set the value at 3rd position
     fruits.set(3, "Guava")
     println( fruits.get(3))
 }
