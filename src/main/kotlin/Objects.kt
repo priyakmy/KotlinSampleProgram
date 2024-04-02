@@ -3,9 +3,10 @@ fun main(){
     val cr= Person(name = "Jack", age = 20)
     println(cr.name)
     println(cr.age)
+    println(cr.candrive())
 
 }
-class Person(val name: String,var age: Int,){
+class Person(val name: String,var age: Int){
     fun candrive(){
        print("Yes you can drive")
     }
